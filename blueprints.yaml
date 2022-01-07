@@ -1,0 +1,39 @@
+name: Spacer
+slug: spacer
+type: plugin
+version: 0.1.0
+description: Typographical word spacing
+icon: plug
+author:
+  name: Dallas Lu
+  email: 914202+dallaslu@users.noreply.github.com
+homepage: https://github.com/dallaslu/grav-plugin-spacer
+keywords: grav, plugin, etc
+bugs: https://github.com/dallaslu/grav-plugin-spacer/issues
+docs: https://github.com/dallaslu/grav-plugin-spacer/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    method:
+      type: radio
+      label: PLUGIN_SPACER.METHOD_LABEL
+      default: space
+      options:
+        space: PLUGIN_SPACER.METHOD_SPACE
+        css: PLUGIN_SPACER.METHOD_CSS
+

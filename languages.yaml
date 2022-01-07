@@ -1,0 +1,11 @@
+en:
+  PLUGIN_SPACER:
+    METHOD_LABEL: Space Method
+    METHOD_SPACE: Space
+    METHOD_CSS: CSS
+
+zh:
+  PLUGIN_SPACER:
+    METHOD_LABEL: 分隔方法
+    METHOD_SPACE: 空格字符
+    METHOD_CSS: CSS 控制
