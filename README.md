@@ -1,8 +1,6 @@
 # Spacer Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
-
-The **Spacer** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav). Typographical word spacing
+The **Spacer** Plugin is an extension for [Grav CMS](https://github.com/getgrav/grav). Use [spacer.js](https://github.com/dallaslu/spacer.js) to automatically add whitespace between East Asian and Latin scripts for typographical purpose.
 
 ## Installation
 
@@ -10,7 +8,7 @@ Installing the Spacer plugin can be done in one of three ways: The GPM (Grav Pac
 
 ### GPM Installation (Preferred)
 
-To install the plugin via the [GPM](http://learn.getgrav.org/advanced/grav-gpm), through your system's terminal (also called the command line), navigate to the root of your Grav-installation, and enter:
+To install the plugin via the [GPM](https://learn.getgrav.org/advanced/grav-gpm), through your system's terminal (also called the command line), navigate to the root of your Grav-installation, and enter:
 
     bin/gpm install spacer
 
@@ -18,7 +16,7 @@ This will install the Spacer plugin into your `/user/plugins`-directory within G
 
 ### Manual Installation
 
-To install the plugin manually, download the zip-version of this repository and unzip it under `/your/site/grav/user/plugins`. Then rename the folder to `spacer`. You can find these files on [GitHub](https://github.com/dallaslu/grav-plugin-spacer) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
+To install the plugin manually, download the zip-version of this repository and unzip it under `/your/site/grav/user/plugins`. Then rename the folder to `spacer`. You can find these files on [GitHub](https://github.com/dallaslu/grav-plugin-spacer) or via [GetGrav.org](https://getgrav.org/downloads/plugins#extras).
 
 You should now have all the plugin files under
 
@@ -38,19 +36,29 @@ Here is the default configuration and an explanation of available options:
 
 ```yaml
 enabled: true
+method: css
 ```
 
 Note that if you use the Admin Plugin, a file with your configuration named spacer.yaml will be saved in the `user/config/plugins/`-folder once the configuration is saved in the Admin.
 
 ## Usage
 
-**Describe how to use the plugin.**
+### Example
 
-## Credits
+In a page:
 
-**Did you incorporate third-party code? Want to thank somebody?**
+```markdown
+这是一条中文与English混排示例。
+```
 
-## To Do
+And it will be transformed in browser:
 
-- [ ] Future plans, if any
+    这是一条中文与 English 混排示例。
 
+### `method` options
+
+case `css`:
+
+    这是一条中文与&lt;spacer&gt;&lt;/spacer&gt;English&lt;spacer&gt;&lt;/spacer&gt;混排示例。
+
+For more examples, visit ![spacer.js](https://dallaslu.github.io/spacer.js).
