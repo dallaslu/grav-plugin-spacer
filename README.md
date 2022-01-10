@@ -59,6 +59,6 @@ And it will be transformed in browser:
 
 case `css`:
 
-    这是一条中文与&lt;spacer&gt;&lt;/spacer&gt;English&lt;spacer&gt;&lt;/spacer&gt;混排示例。
+    这是一条中文与<spacer></spacer>English<spacer></spacer>混排示例。
 
 For more examples, visit ![spacer.js](https://dallaslu.github.io/spacer.js).
