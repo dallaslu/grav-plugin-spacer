@@ -53,12 +53,14 @@ In a page:
 
 And it will be transformed in browser:
 
-    这是一条中文与 English 混排示例。
-
 ### `method` options
 
 case `css`:
 
     这是一条中文与<spacer></spacer>English<spacer></spacer>混排示例。
+
+case `space`:
+
+    这是一条中文与 English 混排示例。
 
 For more examples, visit ![spacer.js](https://dallaslu.github.io/spacer.js).
